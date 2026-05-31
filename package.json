@@ -1,0 +1,33 @@
+{
+  "name": "junior-backend-quest-v1.1.2---must-company",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asafebxd/Junior-BackEnd-Quest-v1.1.2---Must-Company.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/asafebxd/Junior-BackEnd-Quest-v1.1.2---Must-Company/issues"
+  },
+  "homepage": "https://github.com/asafebxd/Junior-BackEnd-Quest-v1.1.2---Must-Company#readme",
+  "devDependencies": {
+    "@types/node": "25.9.1",
+    "tsx": "4.22.4",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": "24.14.0"
+  },
+  "dependencies": {
+    "playwright": "1.60.0"
+  }
+}
