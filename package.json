@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+<<<<<<< HEAD
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --runInBand --verbose"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> 8747873 (build: initiate repo and install required dependencies)
   },
   "repository": {
     "type": "git",
@@ -14,15 +18,28 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "type": "module",
+=======
+  "type": "commonjs",
+>>>>>>> 8747873 (build: initiate repo and install required dependencies)
   "bugs": {
     "url": "https://github.com/asafebxd/Junior-BackEnd-Quest-v1.1.2---Must-Company/issues"
   },
   "homepage": "https://github.com/asafebxd/Junior-BackEnd-Quest-v1.1.2---Must-Company#readme",
+<<<<<<< HEAD
+=======
+  "devDependencies": {
+    "@types/node": "25.9.1",
+    "tsx": "4.22.4",
+    "typescript": "6.0.3"
+  },
+>>>>>>> 8747873 (build: initiate repo and install required dependencies)
   "engines": {
     "node": "24.14.0"
   },
   "dependencies": {
+<<<<<<< HEAD
     "google-translate-api-x": "10.7.3",
     "pdf-lib": "1.17.1",
     "pdf-parse": "2.4.5",
@@ -30,5 +47,8 @@
   },
   "devDependencies": {
     "jest": "30.4.2"
+=======
+    "playwright": "1.60.0"
+>>>>>>> 8747873 (build: initiate repo and install required dependencies)
   }
 }
