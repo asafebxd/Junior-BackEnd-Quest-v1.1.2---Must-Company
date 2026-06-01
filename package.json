@@ -14,20 +14,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/asafebxd/Junior-BackEnd-Quest-v1.1.2---Must-Company/issues"
   },
   "homepage": "https://github.com/asafebxd/Junior-BackEnd-Quest-v1.1.2---Must-Company#readme",
-  "devDependencies": {
-    "@types/node": "25.9.1",
-    "tsx": "4.22.4",
-    "typescript": "6.0.3"
-  },
   "engines": {
     "node": "24.14.0"
   },
   "dependencies": {
+    "google-translate-api-x": "10.7.3",
+    "pdf-lib": "1.17.1",
+    "pdf-parse": "2.4.5",
     "playwright": "1.60.0"
   }
 }
