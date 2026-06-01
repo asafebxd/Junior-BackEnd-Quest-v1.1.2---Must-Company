@@ -1,6 +1,5 @@
 import { chromium } from "playwright";
 import fs from "fs";
-import { SCRIPT_CONFIG } from "./scriptConfig.js";
 
 export async function callbackCrawl(retries) {
   try {

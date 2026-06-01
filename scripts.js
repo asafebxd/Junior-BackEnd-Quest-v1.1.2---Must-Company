@@ -34,15 +34,15 @@ async function crawlingRPA() {
   });
 
   try {
-    await page.goto(SCRIPT_CONFIG.targetURL, { waitUntil: "domcontentloaded" });
-
-    const downloadPromise = page.waitForEvent("download", {
-      timeout: SCRIPT_CONFIG.timeout,
+    await page.goto("https://the-internet.herokuapp.com/download", {
+      waitUntil: "domcontentloaded",
     });
 
-    const downloadLink = page.locator(
-      SCRIPT_CONFIG.cssSelectors.pdfDonwloadLink,
-    );
+    const downloadPromise = page.waitForEvent("download", {
+      timeout: 6000,
+    });
+
+    const downloadLink = page.locator(".example a[href*='test_document.pdf']");
     await downloadLink.first().click();
 
     const download = await downloadPromise;

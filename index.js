@@ -5,5 +5,3 @@ import scripts from "./scripts.js";
 // scripts.translatePDF(); Run to test translating PDFs scritps
 
 scripts.crawlingRPA();
-scripts.mergePDFs();
-scripts.translatePDF();
