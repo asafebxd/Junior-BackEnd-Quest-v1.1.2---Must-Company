@@ -38,7 +38,7 @@ export async function callbackCrawl(retries) {
       });
       const response = await page.goto("https://quotes.toscrape.com", {
         waitUntil: "domcontentloaded",
-        timeout: 6000,
+        timeout: 8000,
       });
 
       const extractedData = await page.evaluate(() => {

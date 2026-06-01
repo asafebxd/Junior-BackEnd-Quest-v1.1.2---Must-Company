@@ -4,10 +4,10 @@ export const SCRIPT_CONFIG = {
   //In order to improve the performance on the script, I added this object to target on the page always the pdf we are looking for
   cssSelectors: {
     searchInput: "body",
-    searchButton: ".example a[href='download/Jpeg_with_exif.jpeg']",
-    pdfDonwloadLink: ".example a[href='download/Jpeg_with_exif.jpeg']",
+    searchButton: ".example a[href='download/test_image.png']",
+    pdfDonwloadLink: ".example a[href='download/test_image.png']",
   },
 
   // Added this timeout to prevent infinite action loops, and enforce the performance asked to the quest
-  timeout: 6000,
+  timeout: 8000,
 };
