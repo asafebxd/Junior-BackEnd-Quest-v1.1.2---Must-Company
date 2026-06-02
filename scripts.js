@@ -1,5 +1,4 @@
 import { chromium } from "playwright";
-import { SCRIPT_CONFIG } from "./scriptConfig.js";
 import * as fs from "fs";
 import * as path from "path";
 import { fileURLToPath } from "url";
