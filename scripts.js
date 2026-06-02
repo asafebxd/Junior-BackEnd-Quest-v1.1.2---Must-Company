@@ -42,7 +42,9 @@ async function crawlingRPA() {
       timeout: 6000,
     });
 
-    const downloadLink = page.locator(".example a[href*='test_document.pdf']");
+    const downloadLink = page.locator(
+      ".example a[href*='P12_TestOtomasyonuFullPage.pdf']",
+    );
     await downloadLink.first().click();
 
     const download = await downloadPromise;

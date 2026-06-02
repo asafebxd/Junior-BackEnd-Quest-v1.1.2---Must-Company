@@ -22,7 +22,9 @@ describe("Automated unit tests for scripts validation", () => {
 
     await new Promise((resolve) => setTimeout(resolve, 5000));
 
-    const extractedFile = await fs.promises.stat("downloads/test_document.pdf");
+    const extractedFile = await fs.promises.stat(
+      "downloads/P12_TestOtomasyonuFullPage.pdf",
+    );
 
     expect(extractedFile.isFile()).toBe(true);
   }, 10000);

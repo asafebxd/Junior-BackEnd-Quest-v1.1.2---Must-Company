@@ -43,8 +43,6 @@ export async function callbackCrawl(retries) {
       const extractedData = await page.evaluate(() => {
         const quoteNotes = document.querySelectorAll(".quote");
 
-        console.log("quoteNotes", quoteNotes.length);
-
         const textData = Array.from(quoteNotes).map((data) => {
           return {
             text: data.querySelector(".text")?.textContent?.trim(),
