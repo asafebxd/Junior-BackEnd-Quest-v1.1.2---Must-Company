@@ -17,7 +17,7 @@
 
 ## Running the quests
 
-- Quest 1: To complete the quest I used the "https://the-internet.herokuapp.com/download" site as example, and the script is targeting the file "P12_TestOtomasyonuFullPage.pdf", in order to run the script open the "index.js" file and uncomment the "scripts.crawlingRPA()" function, after that you can run the command "npm run start"
+- Quest 1: To complete the quest I used the "https://the-internet.herokuapp.com/download" site as example, and the script is targeting the file "test_upload.txt", in order to run the script open the "index.js" file and uncomment the "scripts.crawlingRPA()" function, after that you can run the command "npm run start"
 
 - Quest 2: Inside the directory "helper_files" you will find "CV_Asafe-Alves(EN).pdf" and "CV_Asafe-Alves(PT).pdf files, to complete the second quest you need to go to the "index.js" file and uncomment the "mergePDFs()" function, after that you can run "npm run start" to generate the "merged_doc.pdf"
 
