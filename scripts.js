@@ -1,5 +1,4 @@
 import { chromium } from "playwright";
-import { SCRIPT_CONFIG } from "./scriptConfig.js";
 import * as fs from "fs";
 import * as path from "path";
 import { fileURLToPath } from "url";
@@ -42,7 +41,7 @@ async function crawlingRPA() {
       timeout: 6000,
     });
 
-    const downloadLink = page.locator(".example a[href*='test_document.pdf']");
+    const downloadLink = page.locator(".example a[href*='test_upload.txt']");
     await downloadLink.first().click();
 
     const download = await downloadPromise;

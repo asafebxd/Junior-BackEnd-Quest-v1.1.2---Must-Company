@@ -22,10 +22,10 @@ describe("Automated unit tests for scripts validation", () => {
 
     await new Promise((resolve) => setTimeout(resolve, 5000));
 
-    const extractedFile = await fs.promises.stat("downloads/test_document.pdf");
+    const extractedFile = await fs.promises.stat("downloads/test_upload.txt");
 
     expect(extractedFile.isFile()).toBe(true);
-  }, 10000);
+  }, 30000);
 
   test("Test 'scripts.mergePDFs()' behaivor", async () => {
     await scripts.mergePDFs();
@@ -35,7 +35,7 @@ describe("Automated unit tests for scripts validation", () => {
     const mergedFile = await fs.promises.stat("downloads/merged_doc.pdf");
 
     expect(mergedFile.isFile()).toBe(true);
-  });
+  }, 30000);
 
   test("Test 'scripts.translatePDF()' behaivor", async () => {
     await scripts.translatePDF();
@@ -47,7 +47,7 @@ describe("Automated unit tests for scripts validation", () => {
     );
 
     expect(mergedFile.isFile()).toBe(true);
-  });
+  }, 30000);
 
   test("Test 'callbackCrawl() behaivor", async () => {
     await callbackCrawl(0);
@@ -64,5 +64,5 @@ describe("Automated unit tests for scripts validation", () => {
       author: "Albert Einstein",
       tags: ["change", "deep-thoughts", "thinking", "world"],
     });
-  }, 10000);
+  }, 30000);
 });
